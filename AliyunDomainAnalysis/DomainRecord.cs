@@ -58,7 +58,7 @@ namespace AliyunDomainAnalysis
                 var response = client.GetAcsResponse(request);
                 var domainList = response.DomainRecords;
 
-                if (domainList.Count == 1)
+                if (domainList.Count == 2)
                 {
                     var domainRecord = domainList[0];
                     //logger.LogInformation("domain name:" + domainRecord.DomainName);
